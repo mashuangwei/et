@@ -51,13 +51,13 @@ public class MyBatiesPlusConfiguration {
     }
 
     @Bean(name = "et")
-    @ConfigurationProperties(prefix = "spring.datasource.druid.et" )
+    @ConfigurationProperties(prefix = "spring.datasource.dynamic.et" )
     public DataSource et() {
         return DruidDataSourceBuilder.create().build();
     }
 
     @Bean(name = "easy")
-    @ConfigurationProperties(prefix = "spring.datasource.druid.easy" )
+    @ConfigurationProperties(prefix = "spring.datasource.dynamic.easy" )
     public DataSource easy() {
         return DruidDataSourceBuilder.create().build();
     }
