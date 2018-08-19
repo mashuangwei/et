@@ -54,12 +54,12 @@ spring:
     dynamic:
       et:
         username: root
-        password: root
+        password: 19871021
         driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://localhost:3306/et
       easy:
         username: root
-        password: root
+        password: 19871021
         driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://localhost:3306/easy
     # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
@@ -116,8 +116,8 @@ spring:
     auto: true
 
 logging:
-#  path: /Users/mashuangwei/Desktop/easy/logs
-  path: d:/logs
+  path: /Users/mashuangwei/Desktop/easy/logs
+#  path: d:/logs
   level:
     com.et.mapper: debug
 #    org.springframework.web: debug

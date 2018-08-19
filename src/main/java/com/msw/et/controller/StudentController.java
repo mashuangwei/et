@@ -54,4 +54,10 @@ public class StudentController {
         Wrapper<Student> wrapper = new EntityWrapper<>();
         return studentService.selectList(wrapper);
     }
+
+    @ApiOperation(value = "按照id查询学生")
+    @GetMapping("/select/msw/{id}")
+    public Student selectByMsw(@PathVariable("id") Long id){
+        return studentService.selectByMsw(id);
+    }
 }

@@ -8,4 +8,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class StudentServiceImpl extends ServiceImpl<StudentMapper,Student> implements StudentService {
+    @Override
+    public Student selectByMsw(Long id) {
+        return baseMapper.selectByMsw(id);
+    }
 }
